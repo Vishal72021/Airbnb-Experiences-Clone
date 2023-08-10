@@ -12,7 +12,7 @@ export default function Card(props) {
           </div>
         )}
         <img
-          src={`../images/${props.coverImg}`}
+          src={`images/${props.coverImg}`}
           alt=""
           className="card-image"
         />

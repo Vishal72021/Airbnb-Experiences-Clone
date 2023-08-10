@@ -2,16 +2,11 @@ import "./App.css";
 import Card from "./components/Card";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Data from "./data.js";
+import Data from "./data";
 
 export default function App() {
   const cardGroup = Data.map((item) => {
-    return (
-      <Card
-        key={item.id}
-        {...item}
-      />
-    );
+    return <Card key={item.id} {...item} />;
   });
   return (
     <>
